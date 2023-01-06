@@ -1,0 +1,203 @@
+.mobile-upload-photo-details {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  height: 100%;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.mobile-photo-details-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+}
+
+.mobile-photo-upload-text {
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  display: flex;
+  align-items: stretch;
+  height: 81px;
+  padding: 16px;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.upload-text-profile-photo-wrapper {
+  width: 30px;
+  height: 30px;
+  background-color: rgba(250, 250, 250, 1);
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  margin-right: 6px;
+  margin-top: -2px;
+  flex: 0 0 auto;
+}
+
+.upload-text-profile-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.upload-text-profile-photo::after {
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.upload-textarea-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  flex-grow: 1;
+  flex-shrink: 1;
+  overflow: hidden;
+  width: 100%;
+}
+
+.upload-textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background: 0 0;
+  border: 0;
+  color: rgba(38, 38, 38, 1);
+  font-size: 14px;
+  height: 45px;
+  line-height: 18px;
+  outline: 0;
+  overflow: auto;
+  overflow-wrap: break-word;
+  resize: none;
+}
+
+.upload-photo-preview-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  height: 48px;
+  min-width: 48px;
+  overflow: hidden;
+  position: relative;
+}
+
+.upload-photo-preview {
+  background-color: #efefef;
+  height: 48px;
+  object-fit: cover;
+  width: auto;
+}
+
+.write-alt-text-button {
+  display: flex;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 1);
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  color: rgba(38, 38, 38, 1);
+  flex-direction: row;
+  font-size: 16px;
+  height: 44px;
+  justify-content: space-between;
+  margin-top: 12px;
+  padding: 0;
+}
+
+.write-alt-text-button .alt-text {
+  margin-left: 16px;
+}
+
+.sprite-right-chevron {
+  background-image: url(../images/sprite-core-2x.png);
+  background-repeat: no-repeat;
+  height: 15px;
+  width: 12px;
+  background-size: 440px 411px;
+  background-position: -428px -61px;
+  flex-shrink: 0;
+  margin: 0 16px;
+}
+
+.upload-details-header-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.write-alt-text-wrapper {
+  box-sizing: border-box;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.textarea-modal,
+.loading-bar-modal {
+  display: none;
+  position: fixed;
+  top: 125px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.loading-bar-modal {
+  top: 45px;
+  display: block;
+  z-index: 2;
+}
+
+.upload-textarea:focus ~ .textarea-modal {
+  display: block;
+}
+
+.share-post-loading-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 2;
+  background: #27c4f5
+    linear-gradient(to right, #27c4f5, #a307ba, #fd8d32, #58c322, #27c4f5);
+  background-size: 500%;
+  height: 3px;
+  transform-origin: left;
+  animation: 4s linear infinite LoadingBarProgress,
+    0.5s ease-out LoadingBarEnter;
+  z-index: 100;
+}
+
+@keyframes LoadingBarProgress {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 250%;
+  }
+}
+
+@keyframes LoadingBarEnter {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.details-tags {
+  margin-left: auto;
+}

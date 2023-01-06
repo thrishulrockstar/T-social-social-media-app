@@ -1,0 +1,59 @@
+.mobile-filter-slider {
+  display: flex;
+  padding: 16px 0;
+  user-select: none;
+  align-items: stretch;
+  width: 100vw;
+  overflow: auto hidden;
+}
+
+.mobile-filter-slider::before {
+  content: "\00a0";
+  padding-left: 13px;
+  width: 0;
+}
+
+.mobile-filter-slider::after {
+  content: "\00a0";
+  padding-right: 13px;
+  width: 0;
+}
+
+.mobile-filter-slider-wrapper {
+  display: flex;
+  align-items: stretch;
+}
+
+.mobile-filter-slider-wrapper > button {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 3px;
+}
+
+.filter-button-text {
+  color: rgba(142, 142, 142, 1);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  padding-bottom: 10px;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.filter-image {
+  background-color: rgba(239, 239, 239, 1);
+  height: 100px;
+  width: 100px;
+  transition: transform 0.05s ease-out;
+}
+
+.filter-image:active {
+  transform: scale(0.95);
+}
+
+.filter-button-text.selected {
+  border-top-color: transparent;
+  color: rgba(32, 32, 32, 1);
+  font-weight: 600;
+}

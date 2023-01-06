@@ -1,0 +1,188 @@
+.aspect-ratio-button-menu,
+.zoom-button-menu {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin: 8px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+}
+
+.zoom-button-menu {
+  padding: 8px;
+  margin: 0;
+  margin-left: 44px;
+}
+
+.aspect-ratio-menu-wrapper,
+.zoom-menu-wrapper {
+  max-width: 100%;
+  margin: 8px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  flex-direction: column;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 8px;
+  z-index: 3;
+  animation: SlideUp 180ms ease-out;
+}
+
+.aspect-ratio-menu-wrapper.slideDown {
+  animation: SlideDown 180ms ease-out;
+}
+
+.aspect-ratio-inner-button > svg {
+  padding: 12px;
+}
+
+.aspect-ratio-inner-button {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-right: 4px;
+  padding-left: 12px;
+}
+
+.inner-button-text {
+  text-align: left;
+  flex: 1;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(142, 142, 142, 1);
+  font-weight: 600;
+}
+
+.inner-button-text.selected {
+  color: rgba(255, 255, 255, 1);
+}
+
+.aspect-ratio-divider {
+  background-color: rgba(255, 255, 255, 1);
+  opacity: 0.15;
+  border: 0;
+  height: 1px;
+  margin: 0;
+  width: 100%;
+}
+
+.aspect-ratio-button-wrapper,
+.zoom-button-wrapper,
+.gallery-button-wrapper {
+  margin: 8px;
+  border-radius: 50%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: rgba(26, 26, 26, 0.8);
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  line-height: 0px;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.aspect-ratio-button-wrapper.selected,
+.zoom-button-wrapper.selected,
+.gallery-button-wrapper.selected {
+  background: rgba(255, 255, 255, 1);
+}
+
+.aspect-ratio-button-wrapper.deselected,
+.zoom-button-wrapper.deselected,
+.gallery-button-wrapper.deselected {
+  opacity: 0.3;
+}
+
+.aspect-ratio-button-wrapper:hover,
+.zoom-button-wrapper:hover,
+.gallery-button-wrapper:hover {
+  opacity: 0.7;
+}
+
+.aspect-ratio-button-inner,
+.zoom-button-inner,
+.gallery-button-inner {
+  padding: 8px;
+  display: inline-block;
+}
+
+.aspect-ratio-button,
+.zoom-button,
+.gallery-button {
+  cursor: pointer;
+  text-overflow: ellipsis;
+  position: relative;
+  display: inline-block;
+  line-height: 0px;
+}
+
+@keyframes SlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+@keyframes SlideDown {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+}
+
+.aspect-ratio-menu-wrapper > button {
+  cursor: pointer;
+}
+
+.aspect-ratio-menu-wrapper > button:active {
+  opacity: 0.7;
+}
+
+.zoom-menu-wrapper {
+  padding: 8px 12px;
+  height: 32px;
+  width: 132px;
+  justify-content: center;
+}
+
+.zoom-menu-wrapper.slideDown {
+  animation: SlideDown 180ms ease-out;
+}
+
+.zoom-input-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.zoom-input {
+  height: 1px;
+  width: 100%;
+  background: #000;
+  appearance: none;
+}
+
+.zoom-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+
+.zoom-input::pr {
+  appearance: none;
+  height: 1px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(255, 255, 255, 1);
+}

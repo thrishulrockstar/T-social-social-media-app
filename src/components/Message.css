@@ -1,0 +1,206 @@
+.message {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.message.liked {
+  padding-bottom: 12px;
+}
+
+.message.user {
+  align-items: flex-end;
+  gap: 8px;
+}
+
+.message.user .message-content {
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.message-profile-photo-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.message-profile-photo-wrapper.current-user {
+  justify-content: flex-end;
+}
+
+.message-profile-photo-wrapper .profile-photo-frame {
+  width: 24px;
+  height: 24px;
+  margin: 0;
+  align-self: flex-end;
+}
+
+.message-content {
+  display: flex;
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(239, 239, 239, 1);
+  border-radius: 22px;
+  max-width: 236px;
+  min-height: 44px;
+  overflow: hidden;
+  word-wrap: break-word;
+}
+
+.message-photo {
+  position: absolute;
+}
+
+.message .message-content.svg,
+.message .message-content.notification {
+  border: 1px solid transparent;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.message .message-content.notification {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username,
+.new-title {
+  font-weight: 500;
+}
+
+.message-content-text {
+  padding: 16px;
+  user-select: none;
+}
+
+.message-time-stamp {
+  width: 100%;
+  text-align: center;
+  padding: 16px 0;
+  font-size: 12px;
+  color: rgba(142, 142, 142, 1);
+}
+
+.group-name-change,
+.group-add-people {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: rgba(142, 142, 142, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.group-add-people {
+  display: inline-block;
+  text-align: center;
+}
+
+.group-add-people > span {
+  margin-right: 4px;
+}
+
+.message-profile-photo-spacer {
+  display: flex;
+  flex-basis: 24px;
+  align-self: flex-end;
+}
+
+.first-usernames,
+.last-usernames {
+  font-weight: 600;
+}
+
+.message-username-title {
+  font-size: 12px;
+  color: rgba(142, 142, 142, 1);
+  margin-left: 48px;
+  margin-bottom: 4px;
+}
+
+.message-like {
+  position: absolute;
+  bottom: -16px;
+  background-color: rgba(239, 239, 239, 1);
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 1);
+  padding: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  z-index: 2;
+  cursor: pointer;
+}
+
+.message-like:active {
+  opacity: 0.7;
+}
+
+.message-profile-photo-wrapper.current-user .message-like {
+  right: 0;
+}
+
+.message-like .profile-photo-frame {
+  width: 14px;
+  height: 14px;
+}
+
+.message-photo-frame {
+  flex: 1;
+  position: relative;
+  display: flex;
+  max-width: 236px;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.padding-frame {
+  width: 100%;
+}
+
+.message-photo-blob {
+  width: 100%;
+}
+
+.message-photo-likes-wrapper {
+  display: flex;
+  max-width: 236px;
+  width: 100%;
+}
+
+.seen-by-text {
+  font-size: 12px;
+  color: rgba(142, 142, 142, 1);
+}
+
+.message-links-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.message-links-button {
+  display: none;
+  padding: 8px;
+  cursor: pointer;
+  opacity: 0.5;
+}
+
+.message-links-button.selected {
+  display: inline-block;
+}
+
+.message-links-button:hover {
+  opacity: 1;
+}
+
+.message-profile-photo-wrapper:hover .message-links-button {
+  display: inline-block;
+}

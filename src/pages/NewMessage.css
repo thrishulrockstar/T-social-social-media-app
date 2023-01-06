@@ -1,0 +1,110 @@
+.new-message {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  height: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.new-message-content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  position: relative;
+}
+
+.to-title-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.new-message-form {
+  padding: 12px 16px;
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  align-items: center;
+  flex-wrap: wrap;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  gap: 6px;
+}
+
+.new-message-to-input {
+  border: none;
+  font-size: 14px;
+  line-height: 30px;
+  outline: 0;
+}
+
+.selected-recipient-username {
+  color: rgba(0, 149, 246, 1);
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.selected-recipient-username.selected {
+  color: rgba(255, 255, 255, 1);
+}
+
+.selected-recipients {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.selected-recipient-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  height: 35px;
+  background-color: rgba(224, 241, 255, 1);
+  padding: 0 12px;
+  border-radius: 4px;
+  gap: 6px;
+}
+
+.selected-recipient-button.selected {
+  background-color: rgba(0, 149, 246, 1);
+}
+
+.user-search-results {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 101;
+}
+
+.user-search-results .profile-photo-frame,
+.new-message .profile-photo-frame {
+  width: 44px;
+  height: 44px;
+}
+
+.user-search-results .people-list {
+  gap: 0;
+}
+
+.user-search-results .user-wrapper {
+  padding: 8px 16px;
+}
+
+.selected-checkmark {
+  margin-left: auto;
+}
+
+.suggested-header-text {
+  margin: 16px;
+  font-size: 14px;
+}
+
+.back-button {
+  flex-basis: 32px;
+  cursor: pointer;
+}
+
+.close-share-modal {
+  cursor: pointer;
+}

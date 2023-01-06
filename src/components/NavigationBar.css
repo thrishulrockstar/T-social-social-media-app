@@ -1,0 +1,249 @@
+div {
+  box-sizing: border-box;
+}
+
+.root {
+  height: 100%;
+  z-index: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+}
+
+.navigation-bar-spacer-wrapper {
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.navigation-bar-spacer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex-basis: 60px;
+}
+
+.navigation-bar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  height: 60px;
+  width: 100%;
+  z-index: 4;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.navigation-wrapper {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  max-width: 975px;
+  padding: 0 20px;
+  width: 100%;
+  z-index: 10;
+}
+
+.profile-picture-wrapper {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.drop-down-menu-container {
+  right: 204px;
+  top: 27px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+
+.profile-picture-wrapper::after {
+  border: 1px solid rgba(var(--jb7, 0, 0, 0), 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.profile-picture-wrapper img {
+  width: 100%;
+  height: 100%;
+}
+
+.page-icons-wrapper {
+  display: flex;
+  white-space: nowrap;
+  flex: 1 0 127px;
+  justify-content: flex-end;
+  align-items: center;
+  padding-left: 24px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  flex: 1 0 127px;
+  cursor: pointer;
+}
+
+.logo-wrapper img {
+  margin-top: 7px;
+}
+
+.search-bar-wrapper {
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0 1 auto;
+  height: 36px;
+  min-width: 125px;
+  width: 268px;
+  position: relative;
+}
+
+.search-input {
+  background: rgba(239, 239, 239, 1);
+  font-size: 16px;
+  border: 0;
+  padding: 3px 16px;
+  color: rgba(38, 38, 38);
+  z-index: 2;
+  flex: 1;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  line-height: 18px;
+  box-sizing: border-box;
+  outline: 0;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.search-placeholder {
+  background: rgba(239, 239, 239, 1);
+  font-size: 16px;
+  padding: 0 16px;
+  box-sizing: border-box;
+  color: rgba(142, 142, 142, 1);
+  cursor: text;
+  font-weight: 300;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  text-align: left;
+  top: 0;
+  z-index: 2;
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.search-icon-text-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.search-icon-text-wrapper span {
+  line-height: 25px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.search-icon-text-wrapper svg {
+  margin-right: 12px;
+}
+
+.page-icons-wrapper .icon:not(:first-child) {
+  margin-left: 22px;
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon:active {
+  opacity: 0.5;
+}
+
+.icon:last-child:active {
+  opacity: 1;
+}
+
+.navigation-bar a {
+  color: rgb(38, 38, 38);
+  text-decoration: none;
+  margin: 0;
+  border: 0;
+  font: inherit;
+  vertical-align: baseline;
+  display: flex;
+  align-items: center;
+}
+
+.logo-wrapper:active {
+  opacity: 0.5;
+}
+
+.profile-ring {
+  border: 1px solid rgba(38, 38, 38, 1);
+  border-radius: 50%;
+  height: 28px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 28px;
+}
+
+@media screen and (max-width: 735px) {
+  .search-bar-wrapper {
+    display: none;
+  }
+  .page-icons-wrapper {
+    padding-left: 0;
+  }
+}
+
+.activity-indicator-wrapper {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  bottom: 0;
+  transform: translateY(100%);
+}
+
+.activity-indicator-wrapper .not-read-activity-indicator {
+  position: relative;
+}

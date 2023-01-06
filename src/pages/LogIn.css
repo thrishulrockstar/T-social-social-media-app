@@ -1,0 +1,289 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.main-wrapper {
+  min-height: 100vh;
+  overflow: hidden;
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sign-in-content {
+  max-width: 935px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 32px auto 0;
+}
+
+.sign-in-sign-up-wrapper {
+  max-width: 350px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+}
+
+.sign-in-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+  background-color: white;
+  align-self: center;
+  padding: 10px 0;
+}
+
+.sign-in-form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 24px;
+}
+
+.sign-in-form input {
+  font-size: 16px;
+  padding: 9px 0 7px 8px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  line-height: 18px;
+}
+
+.text-adjust {
+  font-size: 12px !important;
+  padding: 14px 0 2px 8px !important;
+}
+
+.sign-in-form .log-in-button {
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  background-color: #0095f6;
+  border: 1px solid transparent;
+  padding: 5px 9px;
+  margin: 8px 40px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.sign-in-form button:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
+.or-seperator {
+  margin: 10px 40px 18px;
+  display: flex;
+}
+
+.or-text {
+  color: #8e8e8e;
+  flex: 0;
+  font-size: 13px;
+  font-weight: 600;
+  line-height: 15px;
+  margin: 0 18px;
+  text-transform: uppercase;
+}
+
+.line1,
+.line2 {
+  flex: 1;
+  background-color: #dbdbdb;
+  height: 1px;
+  position: relative;
+  top: 0.45rem;
+}
+
+.sign-in-image-wrapper {
+  background-image: url(../images/instagram-log-in-image.png);
+  background-size: 454px 618px;
+  height: 618px;
+  background-repeat: no-repeat;
+  flex-basis: 454px;
+  margin-left: -35px;
+  margin-right: -15px;
+}
+
+.sign-in-logo {
+  margin: 22px auto 12px;
+  background-repeat: no-repeat;
+  background-position: 0 -130px;
+  height: 51px;
+  width: 175px;
+  background-image: url(../images/core-sprites.png);
+  display: block;
+  overflow: hidden;
+  text-indent: 110%;
+  white-space: nowrap;
+}
+
+.facebook-button {
+  margin: 8px 40px;
+  border: 0;
+  padding: 0;
+  display: inline-block;
+  position: relative;
+  background-color: white;
+  cursor: pointer;
+}
+
+.facebook-text {
+  font-size: 14px;
+  color: #385185;
+  font-weight: 600;
+}
+
+.facebook-sprite {
+  display: inline-block;
+  margin-right: 8px;
+  position: relative;
+  top: 3px;
+  background-repeat: no-repeat;
+  background-position: -414px -259px;
+  height: 16px;
+  width: 16px;
+  background-image: url(../images/core-sprites.png);
+}
+
+.forgot-button {
+  color: #00376b;
+  font-size: 12px;
+  line-height: 16px;
+  margin-top: 12px;
+  text-align: center;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.sign-up-wrapper {
+  width: 100%;
+  padding: 10px 0;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 1px;
+}
+
+.sign-up-text {
+  font-size: 14px;
+  margin: 15px;
+  text-align: center;
+}
+
+.sign-up-link {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.log-in-label {
+  height: 36px;
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.username-input-wrapper {
+  background-color: rgba(var(--b3f, 250, 250, 250), 1);
+  display: flex;
+  margin: 0 40px 6px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 3px;
+}
+
+.focused {
+  border-color: rgba(0, 0, 0, 0.35);
+}
+
+.username-spacer {
+  height: 100%;
+  padding-right: 9px;
+  margin-left: 9px;
+  align-items: center;
+  display: flex;
+}
+
+.password-show-button {
+  color: #262626;
+  font-weight: 600;
+  cursor: pointer;
+  margin-left: 8px;
+}
+
+.password-show-button:active {
+  opacity: 0.7;
+}
+
+.username-placeholder {
+  color: #8e8e8e;
+  font-size: 12px;
+  height: 36px;
+  left: 9px;
+  line-height: 36px;
+  overflow: hidden;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  transition: transform ease-out 0.1s;
+  transform-origin: left;
+}
+
+.move-label {
+  transform: scale(0.83333) translateY(-10px);
+}
+
+.screenshots-wrapper {
+  margin: 99px 0 0 151px;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+
+.screenshot-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.current-image {
+  opacity: 1;
+  visibility: visible;
+  z-index: 2;
+  transition: opacity 1.5s ease-in;
+}
+
+.last-image {
+  opacity: 1;
+  visibility: visible;
+  z-index: 1;
+}
+
+.error-text {
+  color: #ed4956;
+  padding: 0;
+  margin: 10px 40px;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+}
+
+@media screen and (max-width: 875px) {
+  .sign-in-image-wrapper {
+    display: none;
+  }
+}

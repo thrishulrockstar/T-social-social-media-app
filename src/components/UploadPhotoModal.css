@@ -1,0 +1,443 @@
+.upload-photo-modal,
+.photo-post-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.85);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  overflow-y: auto;
+  z-index: 75;
+}
+
+.close-upload-modal-button,
+.close-modal-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.upload-photo-content,
+.photo-post-content {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  flex-shrink: 1;
+  justify-content: center;
+  margin: 20px;
+  max-height: calc(100% - 40px);
+  position: relative;
+  animation: modalLoad 0.1s ease-out;
+}
+
+.upload-photo-height-wrapper {
+  height: 100%;
+  max-height: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+}
+
+.upload-photo-inner-content-wrapper {
+  overflow: hidden;
+  flex: 1 1 auto;
+  min-width: 0;
+  min-width: 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: stretch;
+  position: relative;
+  flex-direction: column;
+}
+
+.upload-photo-content-wrapper {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  width: min(calc(100vw - 219px), 861px);
+  max-height: min(calc(100vw - (372px - 43px)), 898px);
+  max-width: min(calc(100vw - 372px), 855px);
+  min-height: 348px;
+  min-width: 348px;
+  transition: all 0.2s ease-in;
+}
+
+.upload-photo-content-wrapper.side-menu {
+  flex: 1;
+  width: min(calc(100vw + 120px), 1201px);
+  max-width: min(calc(100vw - 32px), 1195px);
+  max-height: 898px;
+  min-width: 688px;
+}
+
+.upload-photo-header-wrapper {
+  display: flex;
+  align-items: stretch;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  position: relative;
+  height: 43px;
+}
+
+.upload-photo-back-wrapper,
+.upload-photo-forwards-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 0 0 48px;
+}
+
+.upload-photo-title {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  align-items: center;
+  display: flex;
+  flex-grow: 1;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 24px;
+  text-align: center;
+  user-select: none;
+}
+
+.editing-content {
+  display: flex;
+  align-items: stretch;
+  min-height: 348px;
+  min-width: 348px;
+  position: relative;
+  flex: 1 1 auto;
+}
+
+.photo-editing-wrapper {
+  opacity: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-content: stretch;
+  height: min(calc(100vw - 372px), 855px);
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-photo-input-area {
+  height: 100%;
+  width: 100%;
+  padding: 24px;
+  flex: 0 0 auto;
+  justify-content: center;
+  align-items: center;
+  align-content: stretch;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.photo-upload-input {
+  display: none;
+}
+
+.upload-photo-input-area-text {
+  margin: 0;
+  margin-top: 16px;
+  text-align: center;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.select-from-computer-button {
+  background-color: rgba(0, 149, 246, 1);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  position: relative;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 5px 9px;
+  text-align: center;
+  pointer-events: none;
+}
+
+.select-from-computer-label {
+  margin-top: 24px;
+  cursor: pointer;
+}
+
+.events-off {
+  pointer-events: none;
+}
+
+.upload-photo-edit-buttons-wrapper {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  animation: fadeIn 300ms linear;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes modalLoad {
+  from {
+    transform: scale(1.15, 1.15);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1, 1);
+    opacity: 1;
+  }
+}
+
+.upload-photo-forwards-button {
+  color: rgba(0, 149, 246, 1);
+  font-size: 14px;
+  font-weight: 600;
+  text-align: center;
+  cursor: pointer;
+  padding: 16px;
+  user-select: none;
+}
+
+.upload-photo-forwards-button:active {
+  opacity: 0.7;
+}
+
+.upload-photo-back-button {
+  padding: 8px;
+}
+
+.upload-photo-overflow-frame {
+  height: min(calc(100vw - 372px), 855px);
+  width: min(calc(100vw - 372px), 855px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-direction: column;
+  position: relative;
+  cursor: grab;
+}
+
+.uploaded-photo-background {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+}
+
+.uploaded-photo-background.transition {
+  transition: all 0.2s ease-in-out;
+}
+
+.upload-max-error-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.upload-max-content {
+  padding: 12px 18px;
+  border-radius: 8px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(26, 26, 26, 0.8);
+  animation: modalLoad 300ms ease-in;
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}
+
+.upload-max-content.fade-out {
+  animation: fadeOut 500ms ease-in;
+}
+
+.upload-slide-indicators-wrapper {
+  position: absolute;
+  bottom: 29px;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: stretch;
+  gap: 4px;
+  left: 50%;
+}
+
+.upload-slide-indicator {
+  background-color: rgba(168, 168, 168, 1);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  transition: all 0.2s ease-in-out;
+}
+
+.upload-slide-indicator.selected {
+  background-color: rgba(0, 149, 246, 1);
+}
+
+.left-photo-button,
+.right-photo-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: 8px;
+  cursor: pointer;
+  z-index: 3;
+  box-shadow: 0 4px 12px rgb(0 0 0 / 15%);
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 50%;
+  transition: all 0.2s ease-in-out;
+}
+
+.left-photo-button:hover,
+.right-photo-button:hover {
+  opacity: 0.7;
+}
+
+.right-photo-button {
+  right: 0;
+}
+
+.left-photo-button {
+  left: 0;
+}
+
+.left-photo-svg,
+.right-photo-svg {
+  padding: 8px;
+}
+
+.upload-photo-grid-wrapper {
+  cursor: grab;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  touch-action: none;
+  user-select: none;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  pointer-events: none;
+  border: 0.5px solid rgba(219, 219, 219, 1);
+}
+
+.grid-line {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+  position: absolute;
+}
+
+.grid-line.vertical-left {
+  left: 33%;
+  top: 0%;
+  width: 1px;
+  height: 100%;
+}
+
+.grid-line.vertical-right {
+  right: 33%;
+  top: 0%;
+  width: 1px;
+  height: 100%;
+}
+
+.grid-line.horizontal-top {
+  top: 33%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+}
+
+.grid-line.horizontal-bottom {
+  bottom: 33%;
+  left: 0%;
+  height: 1px;
+  width: 100%;
+}
+
+.mouse-move-modal {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  cursor: grabbing;
+}
+
+.shared-wrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.post-shared-text {
+  margin: 16px 0;
+  font-weight: 300;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.spinner.resize {
+  height: 18px;
+  width: 18px;
+}
+
+.spinner.resize.hidden {
+  display: none;
+}
+
+.upload-canvas {
+  display: none;
+}

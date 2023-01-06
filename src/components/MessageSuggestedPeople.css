@@ -1,0 +1,52 @@
+.suggested-people {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  flex: 1;
+}
+
+.suggested-person {
+  display: flex;
+  padding: 0 16px;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  cursor: pointer;
+}
+
+.suggested-person .profile-photo-frame {
+  margin: 0;
+}
+
+.suggested-person-full-name {
+  font-weight: 600;
+}
+
+.suggested-person-username {
+  color: rgba(142, 142, 142, 1);
+}
+
+.suggested-person-full-name,
+.suggested-person-username {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.suggested-person .double-profile-photo-frame {
+  height: 31px;
+  width: 31px;
+}
+
+.suggested-person .profile-photo-border {
+  padding: 1px;
+  height: 32px;
+  width: 32px;
+}
+
+.suggested-person .group-profile-photo-frame {
+  height: 44px;
+  width: 44px;
+}

@@ -1,0 +1,144 @@
+.desktop-inbox-wrapper {
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  justify-content: center;
+  padding: 20px;
+}
+
+.desktop-inbox {
+  display: flex;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(219, 219, 219, 1);
+  width: 100%;
+  max-width: 935px;
+}
+
+.selected-messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.inbox-side-menu {
+  border-right: 1px solid rgba(219, 219, 219, 1);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+}
+
+.selected-messages {
+  display: flex;
+}
+
+.inbox-placeholder {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.inbox-placeholder-header-text {
+  font-weight: 300;
+  margin: 12px 0;
+}
+
+.inbox-placeholder-text {
+  font-size: 14px;
+  color: rgba(142, 142, 142, 1);
+}
+
+.inbox-placeholder-send-message {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 5px 9px;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  border-radius: 4px;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 149, 246, 1);
+  margin: 32px 0;
+  cursor: pointer;
+}
+
+.inbox-placeholder-send-message:active {
+  opacity: 0.7;
+}
+
+.inbox-side-menu-header {
+  display: flex;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  padding: 0 20px;
+  height: 60px;
+}
+
+.inbox-side-header-text {
+  flex: 1;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+}
+
+.button-spacer,
+.new-message-button {
+  flex-basis: 32px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.new-message-button {
+  cursor: pointer;
+}
+
+.direct-message-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  height: 60px;
+  padding: 0 20px;
+}
+
+.direct-message-header .profile-photo-frame {
+  margin: 0;
+  width: 24px;
+  height: 24px;
+}
+
+.direct-message-header .profile-photo-border {
+  padding: 1px;
+  width: 25px;
+  height: 25px;
+}
+
+.direct-message-header .group-profile-photo-frame {
+  padding: 2px;
+  width: 36px;
+  height: 36px;
+}
+
+.message-username-header-text,
+.message-details-header-text {
+  flex: 1;
+  font-size: 16px;
+  margin: 0;
+  margin-left: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.message-details-header-text {
+  text-align: center;
+}
+
+.left-spacer {
+  flex-basis: 32px;
+}

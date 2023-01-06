@@ -1,0 +1,46 @@
+.comment-search-modal {
+  position: absolute;
+  max-height: 200px;
+  min-width: 230px;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 10;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+  transform: translateY(-100%);
+  margin: 4px 8px;
+  border-radius: 4px;
+}
+
+.comment-search-modal .full-name-text {
+  font-size: 14px;
+}
+
+.comment-search-modal .username-text:hover {
+  text-decoration: none;
+}
+
+.comment-search-modal .people-list {
+  gap: 0;
+}
+
+.comment-search-modal .user-wrapper {
+  padding: 8px 18px;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  cursor: pointer;
+}
+
+.comment-search-modal .user-wrapper:last-child {
+  border-radius: 4px;
+}
+
+.comment-search-modal .user-wrapper:hover {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.comment-search-modal .profile-photo-frame {
+  width: 28px;
+  height: 28px;
+}
+
+.comment-search-modal .user-text-wrapper {
+  gap: 0;
+}

@@ -1,0 +1,115 @@
+.homepage-sidebar-menu {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%;
+  max-width: 319px;
+  position: fixed;
+  margin: 28px 0;
+  gap: 16px;
+}
+
+.user-profile-header {
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-profile-photo-frame {
+  height: 56px;
+  width: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+}
+
+.sidebar-profile-photo-frame::after {
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.user-profile-text {
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin-left: 16px;
+  gap: 4px;
+}
+
+.user-username-text {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.user-username-text:hover {
+  text-decoration: underline;
+}
+
+.user-fullname-text {
+  font-weight: 400;
+  color: rgba(142, 142, 142, 1);
+}
+
+.log-out-button,
+.see-all-suggestions-button {
+  margin-left: auto;
+  font-size: 12px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  color: rgba(0, 149, 246, 1);
+  cursor: pointer;
+}
+
+.see-all-suggestions-button {
+  color: rgba(38, 38, 38, 1);
+  text-decoration: none;
+}
+
+.see-all-suggestions-button:active {
+  opacity: 0.5;
+}
+
+.profile-suggestions-header {
+  display: flex;
+  align-items: center;
+}
+
+.profile-suggestions-header-text {
+  margin: 0;
+  color: rgba(142, 142, 142, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.profile-suggestions-content .follow-button,
+.profile-suggestions-content .following-button {
+  color: rgba(0, 149, 246, 1);
+  background-color: transparent;
+  padding: 0;
+  font-size: 12px;
+}
+
+.profile-suggestions-content .following-button {
+  color: rgba(32, 32, 32, 1);
+  border: none;
+}
+
+.profile-suggestions-content .username-text {
+  line-height: 18px;
+}
+
+.profile-suggestions-content .people-list {
+  margin-left: 6px;
+}

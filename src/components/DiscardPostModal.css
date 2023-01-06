@@ -1,0 +1,96 @@
+.discard-post-modal {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.65);
+  position: fixed;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  overflow-y: auto;
+}
+
+.discard-post-modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  max-height: 100%;
+  overflow: hidden;
+  margin: 20px;
+  width: 260px;
+  animation: modalLoad 0.1s ease-out;
+}
+
+@media screen and (min-width: 736px) {
+  .discard-post-modal-content {
+    width: 400px;
+  }
+}
+
+.discard-modal-content-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.discard-post-modal-text {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  text-align: center;
+  margin: 16px 32px;
+  margin-top: 32px;
+  user-select: none;
+}
+
+.discard-modal-title-text {
+  margin: 0;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.discard-modal-text {
+  padding-top: 12px;
+  color: rgba(142, 142, 142, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.discard-modal-button,
+.discard-modal-cancel-button {
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  min-height: 48px;
+  padding: 4px 8px;
+  text-align: center;
+  user-select: none;
+  vertical-align: middle;
+  font-weight: 300;
+}
+
+.discard-modal-button {
+  margin-top: 16px;
+  font-weight: 700;
+  color: rgba(237, 73, 86, 1);
+}
+
+.discard-modal-button:active,
+.discard-modal-cancel-button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.discard-modal-cancel-button {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

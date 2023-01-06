@@ -1,0 +1,52 @@
+.activity-drop-down {
+  position: absolute;
+  top: 40px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  border-radius: 6px;
+  display: flex;
+}
+
+.activity-drop-down-triangle {
+  position: absolute;
+  right: 50px;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  transform: rotate(45deg);
+  top: -8px;
+  border-radius: 2px;
+  z-index: 0;
+}
+
+.activity-drop-down-wrapper {
+  z-index: 3;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  overflow: hidden;
+  max-height: 362px;
+  min-height: 100px;
+  overflow-y: auto;
+  width: 500px;
+}
+
+@keyframes fadeUpActivity {
+  0% {
+    opacity: 1;
+    max-height: 362px;
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-15%);
+    max-height: 100px;
+  }
+}
+
+.activity-drop-down.animate {
+  animation: fadeUpActivity 0.1s ease-in-out;
+}
+
+.spinner.activity {
+  height: 32px;
+  width: 32px;
+}

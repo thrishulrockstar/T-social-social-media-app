@@ -1,0 +1,299 @@
+.upload-canvas-filters-wrapper {
+  flex: 1;
+  width: min(calc(100vw + 120px), 1201px);
+  max-width: min(calc(100vw - 32px), 1195px);
+  min-width: 688px;
+  display: flex;
+  align-items: stretch;
+}
+
+.upload-canvas-wrapper {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  width: calc(100% - 340px);
+  justify-content: center;
+  position: relative;
+}
+
+.upload-filters-wrapper {
+  display: flex;
+  width: 340px;
+  max-height: min(calc(100vw - 372px), 855px);
+  min-height: 348px;
+  align-items: stretch;
+  flex-direction: column;
+  border-left: 1px solid rgba(219, 219, 219, 1);
+  position: relative;
+}
+
+.upload-filter-tabs-wrapper {
+  display: flex;
+  align-items: stretch;
+  width: 100%;
+}
+
+.upload-filter-tabs-wrapper > button {
+  font-size: 16px;
+  line-height: 24px;
+  padding: 14px 0;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  opacity: 0.3;
+  border-bottom: 1px solid rgba(38, 38, 38, 1);
+  font-weight: 600;
+  cursor: pointer;
+  transition: opacity 0.2s ease-in;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.upload-filter-tabs-wrapper > button.selected {
+  opacity: 1;
+}
+
+.upload-filter-image {
+  border: 2px solid rgba(255, 255, 255, 1);
+  height: 88px;
+  width: 88px;
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.upload-filter-grid-wrapper {
+  gap: 8px;
+  margin: 16px 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.upload-filter-grid-wrapper > button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-filter-title {
+  text-transform: capitalize;
+  margin: 6px 0;
+  color: rgba(142, 142, 142, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.upload-filter-grid-wrapper > button.selected .upload-filter-image {
+  border: 2px solid rgba(0, 149, 246, 1);
+}
+
+.upload-filter-grid-wrapper > button.selected .upload-filter-title {
+  color: rgba(0, 149, 246, 1);
+  font-weight: 600;
+}
+
+.upload-filter-image-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  overflow: hidden;
+  border-radius: 4px;
+  transition: transform 0.05s ease-out;
+}
+
+.upload-filter-image-wrapper:active {
+  transform: scale(0.95);
+}
+
+.upload-filter-grid-wrapper > button:active {
+  opacity: 0.7;
+}
+
+.upload-filter-content {
+  flex: 1;
+  overflow: auto;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.filter-fade-input-wrapper {
+  height: 50px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+}
+
+.filter-fade-input-value-wrapper,
+.adjustment-input-value-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.adjustment-input-value-wrapper {
+  gap: 8px;
+}
+
+.filter-fade-input-value,
+.adjustment-input-value {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  flex-basis: 26px;
+  text-align: right;
+}
+
+.adjustment-input-value.zero {
+  color: rgba(142, 142, 142, 1);
+}
+
+.filter-fade-input,
+.adjustment-input {
+  height: 2px;
+  appearance: none;
+  background-color: rgba(219, 219, 219, 1);
+  outline: 0;
+  width: 100%;
+}
+
+.filter-fade-input::-webkit-slider-thumb,
+.adjustment-input::-webkit-slider-thumb {
+  appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: rgb(38, 38, 38);
+  cursor: pointer;
+}
+
+.filter-adjustment-input-wrapper {
+  padding: 0 16px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.adjustment-text {
+  line-height: 24px;
+  font-size: 16px;
+  text-transform: capitalize;
+  user-select: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.adjustment-text-reset-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 0;
+}
+
+.adjustment-input-value-wrapper {
+  height: 36px;
+}
+
+.adjustment-reset-button {
+  display: none;
+  font-size: 14px;
+  font-weight: 600;
+  color: rgba(0, 149, 246, 1);
+  cursor: pointer;
+}
+
+.adjustment-reset-button:active {
+  opacity: 0.7;
+}
+
+.filter-adjustment-input-wrapper:hover .adjustment-reset-button {
+  display: block;
+}
+
+.upload-filter-canvas {
+  width: 100%;
+}
+
+.tag-photo-instruction {
+  background-color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 1);
+  position: absolute;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 10px 16px;
+  border-radius: 8px;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: left;
+  animation: scaleUp 0.3s ease-in-out;
+  z-index: 101;
+}
+
+@keyframes scaleUp {
+  0% {
+    transform: scale(0) translateX(-50%);
+  }
+  75% {
+    transform: scale(1.2) translateX(-50%);
+  }
+  100% {
+    transform: scale(1) translateX(-50%);
+  }
+}
+
+.tag-instruction-tab {
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  height: 0;
+  width: 0;
+  border-bottom: 0;
+  border-top: 10px solid rgba(0, 0, 0, 0.85);
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: -10px;
+}
+
+.upload-canvas-fitted-wrapper {
+  display: flex;
+  position: relative;
+  cursor: crosshair;
+}
+
+.modal-upload-tag-search {
+  height: 226px;
+  width: 338px;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 6px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  margin-top: 10px;
+  transform: translateX(-10%);
+  z-index: 101;
+}
+
+.tag-search-modal-tab {
+  position: absolute;
+  top: -10px;
+  left: 10%;
+  height: 0;
+  width: 0;
+  border-bottom: 10px solid rgba(255, 255, 255, 1);
+  border-top: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  margin-left: -10px;
+}

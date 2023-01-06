@@ -1,0 +1,65 @@
+.emoji-modal {
+  position: absolute;
+  border-radius: 6px;
+  display: flex;
+  transform: translateY(-105%);
+  z-index: 4;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  animation: emojiFadeIn 0.2s ease-in-out;
+}
+
+@keyframes emojiFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.emoji-modal.animate {
+  animation: emojiFadeDown 0.2s ease-in-out;
+}
+
+@keyframes emojiFadeDown {
+  0% {
+    opacity: 1;
+    transform: translateY(-105);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-95%);
+  }
+}
+
+.emoji-modal-content {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 1);
+  width: 295px;
+  border-radius: 6px;
+  padding: 8px;
+  z-index: 3;
+}
+
+.emoji-details {
+  font-size: 24px;
+  padding: 8px;
+}
+
+.emoji-button {
+  display: flex;
+  cursor: pointer;
+}
+
+.emoji-modal-triangle {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 12px;
+  bottom: -8px;
+  border-radius: 2px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  background-color: rgba(255, 255, 255, 1);
+  transform: rotate(45deg);
+}

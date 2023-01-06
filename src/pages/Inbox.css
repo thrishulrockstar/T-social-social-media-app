@@ -1,0 +1,89 @@
+.inbox-header {
+  padding-top: 100px;
+}
+
+.inbox-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.direct-inbox {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+.direct-inbox .profile-photo-frame {
+  margin: 0;
+  height: 56px;
+  width: 56px;
+}
+
+.direct-inbox-messages {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  margin-top: 8px;
+  padding: 0;
+}
+
+.direct-message-card {
+  display: flex;
+  padding: 8px 16px;
+  gap: 16px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.direct-message-card.selected {
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.direct-message-card.selected:hover {
+  background-color: rgba(239, 239, 239, 1);
+}
+
+.direct-message-card:hover {
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.direct-message-full-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.direct-message-text {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  font-size: 14px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  flex: 1;
+  gap: 2px;
+}
+
+.direct-message-activity {
+  margin-top: 2px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  color: rgba(142, 142, 142, 1);
+}
+
+.activity-time-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.new-message-icon-wrapper {
+  padding: 8px;
+}

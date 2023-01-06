@@ -1,0 +1,37 @@
+.explore-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.photo-grid-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+@media (min-width: 736px) {
+  .photo-grid-content {
+    max-width: 935px;
+    padding: 40px 20px 0;
+    gap: 16px;
+  }
+}
+
+@media (max-width: 735px) {
+  .photo-grid-content {
+    gap: 2px;
+  }
+}
+
+.explore-spinner-wrapper {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spinner.explore {
+  width: 32px;
+  height: 32px;
+}

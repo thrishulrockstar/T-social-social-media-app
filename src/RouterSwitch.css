@@ -1,0 +1,85 @@
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+a {
+  color: rgba(0, 55, 107, 1);
+  text-decoration: none;
+}
+
+.entire-wrapper {
+  min-height: 100vh;
+  flex-direction: column;
+  flex-grow: 1;
+  box-sizing: border-box;
+  align-items: stretch;
+  flex-shrink: 0;
+  position: relative;
+  background-color: rgba(250, 250, 250, 1);
+  display: flex;
+}
+
+.bottom-notification-bar {
+  bottom: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  right: 0;
+  z-index: 500;
+  margin-bottom: 44px;
+  pointer-events: none;
+}
+
+.notification-bar-content {
+  background-color: rgba(39, 39, 39, 1);
+  display: flex;
+  align-items: stretch;
+  min-width: 44px;
+  padding: 16px 16px;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  transform: translateY(0);
+  transition: transform 0.2s ease-out;
+}
+
+.slide-up {
+  transform: translateY(0);
+}
+
+.slide-down {
+  transform: translateY(100%);
+}
+
+.loading-placeholder {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 100;
+}
+
+.loading-placeholder-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -25px 0 0 -25px;
+}
+
+.solo-post-side-bar-modal > .feed-post-footer {
+  border-top: 1px solid rgba(239, 239, 239, 1);
+}
+
+.spinner {
+  animation: spinner 1.2s steps(12, end) infinite;
+}
+
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}

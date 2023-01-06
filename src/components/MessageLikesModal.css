@@ -1,0 +1,39 @@
+.message-likes-modal-desktop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.message-likes-modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  width: 400px;
+  max-height: calc(100% - 40px);
+  border-radius: 12px;
+  animation: modalLoad 0.2s ease-in-out;
+}
+
+.message-likes-modal-header {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  padding: 0 20px;
+}
+
+.message-likes-modal-header-text {
+  flex: 1;
+  margin: 0;
+  font-size: 16px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}

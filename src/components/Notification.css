@@ -1,0 +1,76 @@
+.notifications-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.notification-content {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  gap: 10px;
+}
+
+.thumbnail-photo-padding {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  display: flex;
+}
+
+.thumbnail-photo {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.notification .profile-photo-frame {
+  height: 44px;
+  width: 44px;
+  margin: 0;
+}
+
+.notification-text {
+  flex: 1;
+  font-size: 14px;
+}
+
+.notification-username {
+  font-weight: 600;
+  color: rgba(32, 32, 32, 1);
+}
+
+.notification-username:after {
+  content: " ";
+}
+
+.notification-details::after {
+  content: " ";
+}
+
+.notification-time {
+  color: rgba(142, 142, 142, 1);
+}
+
+.notification-header-text {
+  font-size: 14px;
+  margin: 0;
+  padding: 0 16px;
+  margin-top: 8px;
+}
+
+.header-border-spacer {
+  background-color: rgba(219, 219, 219, 1);
+  border: 0;
+  height: 1px;
+  width: 100%;
+}
+
+.activity-follow-button-wrapper {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 80px;
+}

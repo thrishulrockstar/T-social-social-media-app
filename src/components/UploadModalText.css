@@ -1,0 +1,180 @@
+.upload-modal-text-page {
+  display: flex;
+  width: 340px;
+  max-height: min(calc(100vw - 372px), 855px);
+  min-height: 348px;
+  align-items: stretch;
+  flex-direction: column;
+  border-left: 1px solid rgba(219, 219, 219, 1);
+  position: relative;
+}
+
+.upload-modal-profile-photo {
+  height: 100%;
+  width: 100%;
+}
+
+.upload-modal-profile-photo-frame {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(250, 250, 250, 1);
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.user-header-text-page {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 16px;
+  margin-bottom: 14px;
+  margin-top: 18px;
+}
+
+.username-text {
+  font-weight: 600;
+  line-height: 24px;
+}
+
+.upload-modal-textarea-wrapper {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.upload-modal-textarea {
+  width: 100%;
+  background: 0 0;
+  outline: none;
+  border: 0;
+  overflow: auto;
+  padding: 0 16px;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0;
+  max-height: 168px;
+  min-height: 168px;
+}
+
+.textarea-buttons-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  position: relative;
+}
+
+.text-length-wrapper {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: rgba(199, 199, 199, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.add-location-input-wrapper {
+  display: flex;
+  align-items: center;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  padding: 8px;
+}
+
+.add-location-input {
+  background-color: transparent;
+  border: 0;
+  color: rgba(32, 32, 32, 1);
+  font-size: 16px;
+  outline: 0;
+  padding: 4px 9px;
+  width: 100%;
+}
+
+.add-location-svg {
+  margin-right: 8px;
+  fill: rgba(32, 32, 32, 1);
+  width: 16px;
+  height: 16px;
+}
+
+.accessibility-input-wrapper,
+.advanced-settings-wrapper {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+}
+
+.accessibility-input-button,
+.advanced-input-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 16px;
+  cursor: pointer;
+  user-select: none;
+  padding: 13px 16px;
+}
+
+.accessibility-input-button.selected,
+.advanced-input-button.selected {
+  font-weight: 600;
+}
+
+.advanced-input-button.selected {
+  border-bottom: none;
+}
+
+.advanced-input-button {
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+}
+
+.mobile-photo-upload-text .profile-search-results {
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  box-shadow: none;
+}
+
+.profile-search-results {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transform: translateY(100%);
+  max-height: 200px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 10;
+  box-shadow: 0 1px 8px 0 rgba(0, 0, 0, 0.1);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.profile-search-results .people-list {
+  gap: 0;
+}
+
+.profile-search-results .username-text:hover {
+  text-decoration: none;
+}
+
+.profile-search-results .user-wrapper {
+  padding: 8px 18px;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  cursor: pointer;
+}
+
+.profile-search-results .profile-photo-frame {
+  width: 28px;
+  height: 28px;
+}
+
+.profile-search-results .user-text-wrapper {
+  gap: 0;
+}
+
+.profile-search-results .full-name-text {
+  font-size: 14px;
+}

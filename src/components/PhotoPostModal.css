@@ -1,0 +1,8 @@
+.photo-post-modal {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.photo-post-modal-content {
+  display: flex;
+  align-items: center;
+}

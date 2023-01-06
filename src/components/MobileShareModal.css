@@ -1,0 +1,80 @@
+.mobile-share-modal {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 101;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.mobile-share-header-text {
+  margin: 0;
+  font-size: 16px;
+  flex: 1;
+  text-align: center;
+  line-height: 18px;
+}
+
+.mobile-share-modal-header {
+  display: flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 16px;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+}
+
+.mobile-share-spacer {
+  flex-basis: 32px;
+}
+
+.mobile-share-modal-footer {
+  display: flex;
+  flex-direction: column;
+  padding: 16px;
+  padding-top: 0;
+}
+
+.send-share-button {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 1);
+  font-weight: 600;
+  width: 100%;
+  padding: 16px 0;
+  background-color: rgba(0, 149, 246, 1);
+  border-radius: 4px;
+  z-index: 3;
+}
+
+.mobile-share-text-input {
+  outline: 0;
+  height: 44px;
+  border: 0;
+}
+
+.line-spacer {
+  margin: 0;
+  border: 0;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+  height: 1px;
+}
+
+.mobile-share-modal .profile-photo-frame {
+  height: 44px;
+  width: 44px;
+}
+
+.send-share-button:disabled {
+  background-color: rgb(154, 209, 246);
+  pointer-events: none;
+}
+
+.mobile-share-input-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 8px 4px;
+  transition: height 0.2s;
+  z-index: 1;
+}

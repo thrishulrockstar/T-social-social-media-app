@@ -1,0 +1,80 @@
+.photo-tag-tab.flipped {
+  border-bottom: 0;
+  border-top: 6px solid rgba(0, 0, 0, 0.85);
+  top: 100%;
+}
+
+.photo-tag.flipped {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.photo-tag {
+  display: flex;
+  align-items: center;
+  transform: translate(-50%, 0);
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.85);
+  border-radius: 4px;
+  margin-top: 6px;
+  cursor: pointer;
+}
+
+.photo-tag:active {
+  opacity: 0.7;
+}
+
+.photo-tag-delete-sprite {
+  background-image: url(../images/sprite-core-2x.png);
+  background-position: -380px -96px;
+  background-size: 440px 411px;
+  height: 20px;
+  width: 20px;
+  background-repeat: no-repeat;
+  margin-right: 8px;
+}
+
+.upload-canvas-fitted-wrapper .photo-tag {
+  cursor: grab;
+  border-radius: 8px;
+  padding: 8px 12px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 11;
+  transition: transform 0.2s ease-in-out;
+}
+
+.upload-canvas-fitted-wrapper .photo-tag.flipped {
+  margin-top: 0;
+  margin-bottom: 6px;
+}
+
+.upload-canvas-fitted-wrapper .photo-tag-username {
+  line-height: 18px;
+  margin: 0 4px;
+  z-index: 6;
+}
+
+.upload-canvas-fitted-wrapper .photo-tag-tab {
+  position: absolute;
+  top: 0px;
+  height: 18px;
+  width: 18px;
+  margin: auto;
+  transform: rotate(45deg) translateX(-50%);
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, 1);
+  z-index: 2;
+}
+
+.upload-canvas-fitted-wrapper .photo-tag-tab.flipped {
+  top: 90%;
+}
+
+.modal-delete-tag-button {
+  cursor: pointer;
+  z-index: 11;
+}
+
+.photo-tag-username {
+  user-select: none;
+}

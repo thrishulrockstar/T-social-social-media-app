@@ -1,0 +1,44 @@
+.add-people-modal {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 1);
+  z-index: 102;
+}
+
+.add-people-header {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+}
+
+.header-text {
+  margin: 0;
+  font-size: 16px;
+}
+
+.next-button {
+  font-size: 14px;
+  padding: 8px;
+  color: rgba(0, 149, 246, 1);
+  font-weight: 600;
+}
+
+.user-wrapper.is-member {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.add-people-modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  height: 65%;
+  width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  animation: modalLoad 0.2s ease-in-out;
+}

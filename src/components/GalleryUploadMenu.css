@@ -1,0 +1,172 @@
+.gallery-upload-menu {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-start;
+  padding: 8px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.gallery-upload-menu-wrapper {
+  max-width: 100%;
+  padding: 8px 16px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+  background: rgba(26, 26, 26, 0.8);
+  border-radius: 8px;
+  height: 118px;
+}
+
+.gallery-upload-padding-wrapper {
+  padding: 8px;
+  max-width: 100%;
+  animation: SlideUp 180ms ease-out;
+  z-index: 3;
+}
+
+.gallery-upload-padding-wrapper.slideDown {
+  animation: SlideDown 180ms ease-out;
+}
+
+.gallery-upload-add-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-add-button-wrapper {
+  max-width: 100%;
+  height: 100%;
+  margin: 0 4px 0 6px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.gallery-add-button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 50%;
+  height: 48px;
+  width: 48px;
+  flex-direction: column;
+}
+
+.gallery-add-button:active {
+  background-color: rgba(219, 219, 219, 1);
+}
+
+.gallery-upload-overflow-frame {
+  height: 94px;
+  max-width: 100%;
+  position: relative;
+  min-width: 0;
+  min-height: 0;
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: stretch;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.gallery-upload-photo-overflow {
+  height: 94px;
+  width: 94px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  transition: transform 300ms ease-in;
+}
+
+.gallery-upload-photo-background {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  position: absolute;
+}
+
+.gallery-upload-photo-button {
+  position: absolute;
+  cursor: pointer;
+}
+
+.gallery-photo-button-wrapper {
+  position: absolute;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  transition: all 300ms ease-in;
+}
+
+.discard-gallery-photo-button {
+  position: absolute;
+  z-index: 1;
+  right: 0;
+  margin: 4px;
+  background-color: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+.discard-gallery-photo-button:hover {
+  opacity: 0.7;
+}
+
+.delete-upload-svg {
+  padding: 4px;
+}
+
+.gallery-upload-slider-wrapper {
+  height: 100%;
+  transition: transform 300ms ease-in;
+}
+
+.gallery-slider-sprite-left {
+  background-image: url(../images/sprite-glyphs-2x.png);
+  background-repeat: no-repeat;
+  background-size: 569px 521px;
+  background-position: 0 -426px;
+  height: 45px;
+  width: 45px;
+}
+
+.gallery-slider-sprite-right {
+  background-image: url(../images/sprite-glyphs-2x.png);
+  background-repeat: no-repeat;
+  background-size: 569px 521px;
+  background-position: -46px -426px;
+  height: 45px;
+  width: 45px;
+}
+
+.gallery-slider-button {
+  position: absolute;
+  cursor: pointer;
+  justify-self: center;
+  top: 50%;
+  transform: translateY(-50%);
+  background: 0 0;
+}
+
+.gallery-slider-button.left {
+  left: 0;
+}
+
+.gallery-slider-button.right {
+  right: 0;
+}

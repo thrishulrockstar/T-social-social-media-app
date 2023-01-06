@@ -1,0 +1,32 @@
+.explore-people-content .profile-photo-frame {
+  height: 44px;
+  width: 44px;
+}
+
+.explore-people-content {
+  max-width: 600px;
+  width: 100%;
+}
+
+.explore-people {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore-people-header {
+  padding: 0 12px;
+  margin: 16px 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.explore-people-content .people-list {
+  padding: 16px 0;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.explore-people-content .user-wrapper {
+  padding: 0 16px;
+}

@@ -1,0 +1,308 @@
+.mobile-navigation-top-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  position: relative;
+  width: 100vw;
+  flex-wrap: wrap;
+}
+
+.mobile-navigation-header {
+  height: 45px;
+  z-index: 11;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 16px;
+  font-weight: 600;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.mobile-navigation-header::before {
+  background-color: rgba(219, 219, 219, 1);
+  bottom: -1px;
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+}
+
+.mobile-navigation-icon-wrapper {
+  height: 44px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  width: 100%;
+}
+
+.add-photo-button {
+  display: flex;
+  align-items: stretch;
+  position: relative;
+  box-sizing: border-box;
+  flex-basis: 32px;
+}
+
+h1.logo-header {
+  font-size: 16px;
+  margin: 0;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  text-align: center;
+  justify-content: center;
+  min-width: 0;
+  flex: 1;
+  display: block;
+  align-items: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.logo-header-wrapper {
+  margin-top: 7px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  position: relative;
+}
+
+.logo-header-link {
+  color: rgba(0, 55, 107, 1);
+  text-decoration: none;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.logo-header-link img {
+  max-width: auto;
+  max-height: 29px;
+  object-fit: contain;
+}
+
+.message-icon-wrapper {
+  justify-content: flex-end;
+  flex-basis: 32px;
+  display: flex;
+  align-items: stretch;
+}
+
+.mobile-bottom-navigation {
+  background-color: rgba(255, 255, 255, 1);
+  height: 44px;
+  left: 0;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  z-index: 10;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.mobile-bottom-navigation::before {
+  background-color: rgba(219, 219, 219, 1);
+  content: "";
+  height: 1px;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: -1px;
+}
+
+.bottom-navigation-icon-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+.bottom-navigation-icon-wrapper .icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  height: 44px;
+}
+
+.mobile-navigation-bar-spacer {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-basis: 44px;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.discover-people-icon-wrapper {
+  padding: 8px;
+}
+
+.back-svg {
+  transform: rotate(-90deg);
+}
+
+.mobile-add-photo-input {
+  display: none;
+}
+
+.navigation-profile-photo,
+.profile-picture-wrapper {
+  pointer-events: none;
+}
+
+.mobile-explore-search-wrapper {
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  gap: 12px;
+}
+
+.mobile-explore-search-input {
+  width: 100%;
+  -webkit-appearance: none;
+  line-height: 20px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 6px;
+  padding: 4px 22px;
+  outline: 0;
+}
+
+.mobile-explore-search-input:focus {
+  border: 1px solid rgba(168, 168, 168, 1);
+}
+
+.mobile-explore-search-input:focus ~ .search-explore-placeholder {
+  left: 0;
+  transform: translate(0);
+}
+
+.search-explore-placeholder.focused {
+  left: 0;
+  transform: translate(0);
+}
+
+.mobile-search-label {
+  display: flex;
+  width: 100%;
+  position: relative;
+}
+
+.search-explore-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 8px;
+  transition: left 0.15s ease-out, transform 0.15s ease-out;
+}
+
+.search-placeholder-text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  color: rgba(142, 142, 142, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.search-glyph-sprite {
+  background-image: url(../images/sprite-glyphs-3.png);
+  background-position: -425px -320px;
+  background-size: 528px 523px;
+  height: 10px;
+  width: 10px;
+  background-repeat: no-repeat;
+}
+
+.search-cancel-button {
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  display: flex;
+  align-items: center;
+}
+
+.clear-search-button {
+  display: flex;
+  align-items: center;
+  padding: 0 6px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 10;
+  cursor: pointer;
+}
+
+.clear-search-glyph-sprite {
+  background-image: url(../images/sprite-glyphs-3.png);
+  background-position: -493px -319px;
+  background-size: 528px 523px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
+}
+
+.create-message-button {
+  color: rgba(0, 149, 246, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  padding: 8px;
+}
+
+.create-message-button:disabled {
+  pointer-events: none;
+  opacity: 0.3;
+}
+
+.messages-link {
+  position: relative;
+}
+
+.not-read-count {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 10px;
+  padding: 1px 4px;
+  padding-top: 2px;
+  border-radius: 50%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  background-color: red;
+}
+
+.not-read-activity-indicator {
+  height: 4px;
+  width: 4px;
+  border-radius: 50%;
+  background-color: red;
+  position: absolute;
+  bottom: 0;
+  margin: 4px;
+}
+
+.bottom-navigation-icon-wrapper .profile-ring {
+  height: 30px;
+  width: 30px;
+}

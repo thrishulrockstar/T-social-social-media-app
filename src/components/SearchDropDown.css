@@ -1,0 +1,41 @@
+.search-drop-down {
+  top: 12px;
+  width: 375px;
+  display: flex;
+  position: relative;
+}
+
+.search-drop-down-content {
+  position: absolute;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  border-radius: 6px;
+  width: 100%;
+}
+
+.search-drop-down-triangle {
+  top: -6px;
+  bottom: 0;
+  left: 187.5px;
+  height: 14px;
+  width: 14px;
+  background-color: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(255, 255, 255, 1);
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.0975);
+  position: absolute;
+  transform: rotate(45deg);
+  z-index: 2;
+}
+
+.search-drop-down-content .search-results {
+  background-color: rgba(255, 255, 255, 1);
+  height: 400px;
+  border-radius: 6px;
+  z-index: 3;
+  position: relative;
+  overflow: hidden;
+  max-height: 400px;
+}
+
+.search-drop-down-content.animate {
+  animation: fadeUpActivity 0.1s ease-in-out;
+}

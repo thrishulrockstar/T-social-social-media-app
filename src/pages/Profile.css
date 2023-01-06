@@ -1,0 +1,684 @@
+.profile-wrapper {
+  background-color: rgba(255, 255, 255, 1);
+  display: flex;
+  flex: 1;
+  align-items: stretch;
+  flex-direction: column;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.profile-numbers-list {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+.tablist-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.follow-profile-button {
+  background-color: rgba(0, 149, 246, 1);
+  color: rgba(255, 255, 255, 1);
+  line-height: 26px;
+  font-size: 14px;
+  font-weight: 600;
+  white-space: nowrap;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  position: relative;
+}
+
+@media screen and (min-width: 737px) {
+  .top-details .displayName {
+    margin-right: 24px;
+  }
+
+  .follow-profile-button {
+    padding: 2px 24px;
+  }
+
+  .profile {
+    padding: 30px 20px 0;
+    box-sizing: content-box;
+    width: calc(100% - 40px);
+    margin-bottom: 0;
+    margin: 0 auto 30px;
+    max-width: 935px;
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .profile-numbers-list {
+    gap: 40px;
+  }
+
+  .profile-details {
+    flex-basis: 30px;
+    flex-grow: 2;
+  }
+  .top-details {
+    margin-bottom: 20px;
+    align-items: center;
+    flex-direction: row;
+    flex-shrink: 1;
+    min-width: 0;
+    display: flex;
+  }
+  .profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-right: 30px;
+    flex-grow: 1;
+    flex-shrink: 0;
+    flex-basis: 0;
+  }
+  .profile-header {
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    position: relative;
+    box-sizing: border-box;
+    flex-shrink: 0;
+  }
+  .profile-image-button,
+  .profile-image-wrapper {
+    height: 150px;
+    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    background-color: rgba(250, 250, 250, 1);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .profile-tabs:not(:last-child) {
+    margin-right: 60px;
+  }
+
+  .profile-tabs {
+    height: 52px;
+  }
+
+  .edit-profile-button-wrapper,
+  .follow-profile-button-wrapper {
+    margin-left: 20px;
+    flex: 0 1 auto;
+    justify-content: flex-start;
+    display: flex;
+    align-items: stretch;
+    text-decoration: none;
+  }
+
+  .profile-text-block a,
+  .profile-text-block div {
+    line-height: 24px;
+  }
+
+  .posts-wrapper,
+  .followers-link,
+  .following-link {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .tablist-wrapper {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid rgba(219, 219, 219, 1);
+    color: #8e8e8e;
+    font-size: 12px;
+    font-weight: 600;
+    justify-content: center;
+    letter-spacing: 0.5px;
+    text-align: center;
+  }
+
+  .tablist-icon-text-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+}
+
+@media screen and (max-width: 736px) {
+  .profile-wrapper {
+    margin-bottom: 44px;
+    background-color: rgba(255, 255, 255, 1);
+  }
+
+  .profile-posts {
+    border-top: 1px solid rgba(219, 219, 219, 1);
+  }
+
+  .follow-profile-button {
+    padding: 2px 12px;
+    max-width: 250px;
+  }
+
+  .profile-image {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: center;
+    margin-right: 28px;
+    flex-shrink: 0;
+  }
+
+  .profile-image-button,
+  .profile-image-wrapper {
+    height: 77px;
+    width: 77px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50%;
+    background-color: rgba(250, 250, 250, 1);
+    overflow: hidden;
+    position: relative;
+  }
+
+  .profile-header {
+    margin-left: 16px;
+    margin-right: 16px;
+    margin-top: 16px;
+    margin-bottom: 24px;
+    display: flex;
+    align-items: stretch;
+  }
+
+  .top-details {
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 1;
+    min-width: 0;
+  }
+  .edit-profile-button-wrapper {
+    max-width: 250px;
+    text-decoration: none;
+  }
+
+  .profile-details {
+    flex-basis: 0;
+    flex-grow: 1;
+  }
+
+  .profile-text-block {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 16px 21px;
+  }
+
+  .profile-text-block a,
+  .profile-text-block div {
+    line-height: 18px;
+    font-size: 14px;
+  }
+
+  .profile-numbers-list {
+    border-top: 1px solid rgba(219, 219, 219, 1);
+    display: flex;
+    justify-content: stretch;
+    padding: 12px 0;
+    list-style: none;
+  }
+
+  .posts-wrapper,
+  .followers-link,
+  .following-link {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    color: rgba(142, 142, 142, 1);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+
+  .profile-numbers-list li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 33.3%;
+  }
+
+  .tablist-wrapper {
+    border-top: 1px solid rgba(219, 219, 219, 1);
+  }
+
+  .profile-tabs {
+    display: flex;
+    cursor: pointer;
+    flex: 1 1 auto;
+    height: 44px;
+  }
+}
+
+.top-details h2 {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  margin: -5px 0 -6px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.upload-profile-image {
+  height: 100%;
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  position: relative;
+}
+
+.upload-profile-image img,
+.profile-image-wrapper img {
+  height: 100%;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.edit-profile-button {
+  background-color: transparent;
+  border: 1px solid rgba(219, 219, 219, 1);
+  color: rgba(38, 38, 38, 1);
+  border-radius: 4px;
+  position: relative;
+  padding: 6px 9px;
+  font-size: 14px;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 600;
+  width: auto;
+  text-decoration: none;
+}
+
+.settings-quick-links-wrapper {
+  display: flex;
+  flex-shrink: 0;
+  padding: 8px;
+}
+
+.settings-quick-links-button {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  justify-content: center;
+}
+
+.profile-numbers-wrapper {
+  margin-bottom: 20px;
+}
+
+.profile-numbers-list span {
+  font-weight: 600;
+  color: rgba(38, 38, 38, 1);
+}
+
+.profile-full-name {
+  font-weight: 600;
+}
+
+.profile-text-block a {
+  text-decoration: none;
+  font-weight: 600;
+  color: rgba(0, 55, 107, 1);
+}
+
+.profile-image-button::after,
+.profile-image-wrapper::after {
+  border: 1px solid rgba(0, 0, 0, 0.0975);
+  border-radius: 50%;
+  bottom: 0;
+  content: "";
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.profile-image-button,
+.profile-image-wrapper {
+  cursor: pointer;
+}
+
+.upload-profile-form input {
+  display: none;
+}
+
+.hidden {
+  pointer-events: none;
+}
+
+#canvas {
+  align-self: flex-start;
+}
+
+.profile-tabs {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #8e8e8e;
+  border-top: 1px solid transparent;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.profile-tabs:active {
+  opacity: 0.7;
+}
+
+.profile-tabs.selected {
+  border-top: 1px solid rgba(38, 38, 38, 1);
+  color: rgba(38, 38, 38, 1);
+}
+
+.profile-tabs.selected svg {
+  color: rgba(38, 38, 38, 1);
+}
+
+.profile-feed-sprite {
+  background-image: url(../images/sprite-glyphs-2x-2.png);
+  height: 24px;
+  width: 24px;
+  background-size: 577px 545px;
+  background-position: -150px -521px;
+  background-repeat: no-repeat;
+}
+
+.profile-feed-sprite.selected {
+  background-position: -125px -521px;
+}
+
+.no-user-profile {
+  padding: 0 30px;
+}
+
+.no-user-profile h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.no-user-profile div {
+  margin-top: 30px;
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.no-user-profile a {
+  color: rgba(0, 55, 107, 1);
+  text-decoration: none;
+}
+
+.profile-photo-spinner {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+  z-index: 3;
+}
+
+.profile-photo-spinner.hidden {
+  display: none;
+}
+
+.profile-posts {
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+  width: 100%;
+  background-color: rgba(250, 250, 250, 1);
+}
+
+.no-posts-from-user,
+.no-saved-posts,
+.no-tagged-posts {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.no-posts-content,
+.no-saved-posts-content,
+.no-tagged-posts-content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 60px 44px;
+}
+
+.camera-sprite-first-photo {
+  background-image: url(../images/sprite-core-2x.png);
+  height: 62px;
+  width: 62px;
+  background-position: -63px -288px;
+  background-size: 440px 411px;
+  background-repeat: no-repeat;
+}
+
+.share-first-photo-header,
+.no-saved-posts-title,
+.no-tagged-posts-title {
+  color: rgba(38, 38, 38, 1);
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 18px 0;
+  margin-top: 22px;
+}
+
+.share-first-photo-text,
+.no-saved-posts-text,
+.no-tagged-posts-text {
+  color: rgba(38, 38, 38, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin-bottom: 18px;
+}
+
+.add-first-photo-text-button {
+  color: rgba(0, 149, 246, 1);
+  font-size: 14px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  cursor: pointer;
+}
+
+.add-first-photo-button {
+  cursor: pointer;
+}
+
+.camera-sprite-no-posts {
+  background-image: url(../images/sprite-glyphs-2x.png);
+  height: 24px;
+  width: 24px;
+  background-position: -255px -444px;
+  background-size: 576px 544px;
+  background-repeat: no-repeat;
+  padding-bottom: 2px;
+}
+
+.camera-sprite-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 44px;
+  width: 44px;
+  position: relative;
+}
+
+.camera-sprite-wrapper::after {
+  border: 3px solid rgba(38, 38, 38, 1);
+  border-radius: 50%;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  height: 200%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  -webkit-transform: scale(0.5);
+  transform: scale(0.5);
+  -webkit-transform-origin: top left;
+  transform-origin: top left;
+  width: 200%;
+}
+
+.no-posts-yet {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.no-posts-yet-content {
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 8px;
+}
+
+.no-posts-text-header {
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 600;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 0;
+}
+
+.no-posts-text {
+  color: rgba(142, 142, 142, 1);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.no-posts-text-wrapper {
+  padding: 8px;
+  flex: 1;
+}
+
+.no-posts-yet-wide,
+.no-tagged-posts-public {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 44px;
+  margin-top: 60px;
+}
+
+.no-posts-text-header-wide,
+.no-tagged-posts-title-public {
+  margin: 48px 0;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 32px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+.no-saved-top-text {
+  color: rgba(142, 142, 142, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  margin: 16px;
+  align-self: center;
+}
+
+.no-saved-posts-sprite,
+.no-tagged-posts-sprite,
+.no-tagged-sprite-public {
+  background-image: url(../images/sprite-core-2x.png);
+  height: 62px;
+  width: 62px;
+  background-size: 440px 411px;
+  background-position: -126px -288px;
+  background-repeat: no-repeat;
+}
+
+.no-tagged-posts-sprite,
+.no-tagged-sprite-public {
+  background-position: -189px -288px;
+}
+
+.unfollow-button-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.unfollow-glyph-sprite {
+  background-image: url(../images/sprite-glyphs-2x-2.png);
+  background-repeat: no-repeat;
+  background-size: 577px 545px;
+  background-position: -553px -321px;
+  height: 12px;
+  width: 24px;
+}
+
+.message-button,
+.unfollow-button {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 18px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px 9px;
+  border: 1px solid rgba(219, 219, 219, 1);
+  border-radius: 4px;
+}
+
+.message-button {
+  flex: 1;
+}
+
+.unfollow-button {
+  height: 30px;
+}

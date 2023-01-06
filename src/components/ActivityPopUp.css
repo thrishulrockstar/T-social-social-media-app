@@ -1,0 +1,126 @@
+.activity-pop-up {
+  position: absolute;
+  animation: scaleInActivity 0.3s ease-in-out;
+}
+
+.bottom-navigation-icon-wrapper .activity-pop-up {
+  bottom: 60px;
+  transform-origin: bottom;
+}
+
+.page-icons-wrapper .activity-pop-up {
+  top: 60px;
+  left: -300%;
+  right: -300%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform-origin: top;
+}
+
+.page-icons-wrapper .activity-pop-up-triangle {
+  border-top: 0;
+  border-bottom: 8px solid rgba(237, 73, 86, 1);
+  top: 0;
+  transform: translateY(-100%) translateX(-50%);
+}
+
+.activity-pop-up.animate {
+  animation: scaleOutActivity 0.3s ease-in-out;
+}
+
+.activity-pop-up-content {
+  height: 100%;
+  background-color: rgba(237, 73, 86, 1);
+  color: rgba(255, 255, 255, 1);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 8px;
+  position: relative;
+  box-shadow: rgb(0 0 0 / 20%) 0 4px 22px;
+}
+
+.activity-pop-up-triangle {
+  position: absolute;
+  border-top: 8px solid rgba(237, 73, 86, 1);
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+
+  left: 50%;
+}
+
+.bottom-navigation-icon-wrapper .activity-pop-up-triangle {
+  bottom: 0;
+  transform: translateY(100%) translateX(-50%);
+}
+
+.comment-activity-sprite {
+  background-image: url(../images/sprite-glyphs-4.png);
+  background-size: 553px 524px;
+  background-position: -529px -193px;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.like-activity-sprite {
+  background-image: url(../images/sprite-glyphs-4.png);
+  background-size: 553px 524px;
+  background-position: -529px -261px;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.followers-activity-sprite {
+  background-image: url(../images/sprite-glyphs-4.png);
+  background-size: 553px 524px;
+  background-position: -529px -363px;
+  background-repeat: no-repeat;
+  height: 16px;
+  width: 16px;
+}
+
+.comment-activity,
+.like-activity,
+.followers-activity {
+  display: flex;
+  gap: 4px;
+  padding: 2px;
+  align-items: center;
+}
+
+.comment-activity-count,
+.like-activity-count,
+.followers-activity-count {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+}
+
+@keyframes scaleInActivity {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+  80% {
+    opacity: 1;
+    transform: scale(1.1);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scaleOutActivity {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: scale(0);
+  }
+}

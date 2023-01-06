@@ -1,0 +1,27 @@
+.modal {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 101;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+.new-message-modal-content {
+  background-color: rgba(255, 255, 255, 1);
+  height: 65%;
+  width: 400px;
+  border-radius: 12px;
+  overflow: hidden;
+  position: relative;
+  animation: modalLoad 0.2s ease-in-out;
+}
+
+.modal .mobile-navigation-header {
+  position: relative;
+}

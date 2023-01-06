@@ -1,0 +1,48 @@
+.not-read-dot {
+  width: 8px;
+  height: 8px;
+  background-color: rgba(0, 149, 246, 1);
+  border-radius: 4px;
+}
+
+.direct-message-full-name.bold,
+.direct-message-activity.bold {
+  font-weight: 600;
+}
+
+.direct-message-activity.bold {
+  color: rgba(32, 32, 32, 1);
+}
+
+.direct-message-time {
+  display: flex;
+  color: rgba(142, 142, 142, 1);
+}
+
+.direct-message-time::before {
+  content: " ";
+}
+
+.group-profile-photo-frame {
+  position: relative;
+  height: 56px;
+  width: 56px;
+}
+
+.double-profile-photo-frame,
+.profile-photo-border {
+  position: absolute;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 1);
+}
+
+.profile-photo-border {
+  padding: 2px;
+  height: 44px;
+  width: 44px;
+  bottom: 0;
+  right: 0;
+}

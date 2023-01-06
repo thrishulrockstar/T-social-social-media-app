@@ -1,0 +1,27 @@
+.delete-comment-content {
+  display: flex;
+  flex-direction: column;
+  width: calc(100% - 88px);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+}
+
+@media (min-width: 735px) {
+  .delete-comment-content {
+    width: 400px;
+  }
+}
+
+.delete-comment-button,
+.cancel-modal-button {
+  padding: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  font-size: 14px;
+}
+
+.delete-comment-button {
+  color: rgba(237, 73, 86, 1);
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+  font-weight: 600;
+}

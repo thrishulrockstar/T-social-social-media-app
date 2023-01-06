@@ -1,0 +1,51 @@
+.sign-up-header {
+  color: #8e8e8e;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 20px;
+  margin: 0 40px 10px;
+  text-align: center;
+}
+
+.facebook-button.sign-up {
+  background-color: #0095f6;
+  padding: 5px 9px;
+  border-radius: 4px;
+  line-height: 18px;
+  border: 1px solid transparent;
+}
+
+.facebook-button.sign-up .facebook-text {
+  color: white;
+}
+
+.facebook-button.sign-up .facebook-sprite {
+  background-position: -414px -300px;
+}
+
+.sign-in-form.sign-up {
+  margin-top: 0;
+}
+
+.terms-text {
+  margin: 10px 40px;
+  text-align: center;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8e8e8e;
+  padding-bottom: 20px;
+}
+
+.input-sprite {
+  background-image: url(../images/core-sprites.png);
+  width: 22px;
+  height: 22px;
+}
+
+.input-sprite.error {
+  background-position: -249px -333px;
+}
+
+.input-sprite.valid {
+  background-position: -225px -333px;
+}

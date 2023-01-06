@@ -1,0 +1,101 @@
+.profile-photo-modal {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.65);
+  bottom: 0;
+  flex-direction: column;
+  left: 0;
+  overflow-y: auto;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 102;
+}
+
+.profile-photo-content {
+  margin: 20px;
+  flex-shrink: 1;
+  justify-content: center;
+  max-height: calc(100% - 40px);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 12px;
+  max-height: 100%;
+  overflow: hidden;
+  z-index: 100;
+  width: 260px;
+}
+
+@media screen and (min-width: 736px) {
+  .profile-photo-content {
+    width: 400px;
+  }
+}
+
+.profile-photo-title {
+  margin-top: 28px;
+  text-align: center;
+  color: rgba(38, 38, 38, 1);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+}
+
+.profile-photo-buttons {
+  margin-top: 8px;
+  display: flex;
+  align-items: stretch;
+  flex-direction: column;
+}
+
+.remove-button {
+  color: rgba(237, 73, 86, 1);
+  font-weight: 700;
+}
+
+.profile-upload-input {
+  display: none;
+}
+
+.upload-button,
+.remove-button,
+.cancel-button {
+  background-color: transparent;
+  font-size: 14px;
+  line-height: 1.5;
+  cursor: pointer;
+  min-height: 48px;
+  padding: 4px 8px;
+  text-align: center;
+  vertical-align: middle;
+  border-top: 1px solid rgba(219, 219, 219, 1);
+}
+
+.upload-button {
+  color: rgba(0, 149, 246, 1);
+  font-weight: 700;
+}
+
+.upload-button-label {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.upload-button:active,
+.remove-button:active,
+.cancel-button:active {
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 1;
+}
+
+.cancel-button {
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}

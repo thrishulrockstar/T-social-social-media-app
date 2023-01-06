@@ -1,0 +1,43 @@
+.mobile-upload-search-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(219, 219, 219, 1);
+}
+
+.modal-tag-search-input {
+  flex: 1;
+  outline: 0;
+  border: 0;
+  line-height: 20px;
+  background-color: rgba(255, 255, 255, 1);
+  padding: 4px 12px;
+  padding-right: 24px;
+  font-size: 14px;
+}
+
+.modal-tag-search-label {
+  display: flex;
+  align-items: center;
+  flex: 1;
+  position: relative;
+}
+
+.modal-tag-search-text {
+  font-weight: 600;
+}
+
+.tag-search-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.modal-upload-tag-search .search-results {
+  flex: 1;
+  overflow-y: scroll;
+}
+
+.modal-upload-tag-search .people-list {
+  padding-top: 0;
+}

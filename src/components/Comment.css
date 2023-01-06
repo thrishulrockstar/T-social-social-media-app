@@ -1,0 +1,59 @@
+.comment-content {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  gap: 18px;
+}
+
+.comment-text-time-wrapper {
+  flex: 1;
+}
+
+.comment-footer {
+  height: 24px;
+  gap: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.comment-like-button {
+  margin-top: 3px;
+  cursor: pointer;
+}
+
+.comment-like-button:hover {
+  opacity: 0.5;
+}
+
+.comment-reply-button,
+.comment-likes-counter {
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 600;
+  color: rgba(142, 142, 142, 1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif;
+  cursor: pointer;
+}
+
+.comment-likes-counter {
+  font-weight: 400;
+}
+
+.post-comments-input .comment-wrapper {
+  padding-right: 24px;
+}
+
+.replies-wrapper {
+  display: flex;
+  width: 100%;
+}
+
+.comment-links-button {
+  display: none;
+  cursor: pointer;
+}
+
+.comment-content:hover .comment-links-button {
+  display: block;
+}
